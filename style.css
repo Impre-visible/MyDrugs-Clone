@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 200%;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+.header_left,
+.header_right {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-top: 2%;
+}
+
+.header_right {
+  margin-right: 25%;
+}
+
+.header_left {
+  margin-left: 25%;
+}
+
+.logo_header {
+  width: auto;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.shop {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contact {
+  float: right;
+}
+
+@keyframes AnnimationCarousel {
+  0% {
+    transform: translateX(calc(-100% / 5 * 0));
+  }
+  20% {
+    transform: translateX(calc(-100% / 5 * 1));
+  }
+  40% {
+    transform: translateX(calc(-100% / 5 * 2));
+  }
+  60% {
+    transform: translateX(calc(-100% / 5 * 3));
+  }
+  80% {
+    transform: translateX(calc(-100% / 5 * 4));
+  }
+}
+
+.containerCarousel {
+  height: 1025px;
+  overflow: hidden;
+  z-index: 2;
+  margin-top: -270px;
+}
+
+.carousel {
+  height: 100%;
+  width: calc(100% * 5);
+  display: flex;
+  animation: AnnimationCarousel 20s infinite;
+}
+
+.carousel [class*="frame_"] {
+  width: calc(100% / 5);
+}
+
+.carousel .frame_1 {
+  background: url("https://cdn.gaetandev.fr/impre/files/mydrugs_full.png");
+  width: calc(100% / 5);
+  background-color: black;
+}
+
+.carousel .frame_2 {
+  background: url("https://cdn.gaetandev.fr/impre/files/pilul_blue.jpg");
+  width: calc(100% / 5);
+  margin-top: 1%;
+  background-color: #01b7f9;
+}
+
+.carousel .frame_3 {
+  background: url("https://cdn.gaetandev.fr/impre/files/pilul_green.jpg");
+  width: calc(100% / 5);
+  margin-top: 1%;
+  background-color: #93fb08;
+}
+
+.carousel .frame_4 {
+  background: url("https://cdn.gaetandev.fr/impre/files/pilul_purple.jpg");
+  width: calc(100% / 5);
+  margin-top: 1%;
+  background-color: #c503f8;
+}
+
+.carousel .frame_5 {
+  background: url("https://cdn.gaetandev.fr/impre/files/pilul_red.jpg");
+  width: calc(100% / 5);
+  margin-top: 1%;
+  background-color: #fd3537;
+}
+
+.container {
+  width: 280px;
+  height: 500px;
+  font-family: Arial;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card-head-blue {
+  position: relative;
+  height: 252px;
+  background: #01b7f9;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-head-green {
+  position: relative;
+  height: 252px;
+  background: #6eb90a;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-head-purple {
+  position: relative;
+  height: 252px;
+  background: #c503f8;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-head-red {
+  position: relative;
+  height: 252px;
+  background: #fd3537;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-head {
+  position: relative;
+  height: 252px;
+  background: #6eb90a;
+  border-radius: 25px 25px 0 0;
+}
+
+.card-logo {
+  width: 30px;
+  margin: 15px;
+}
+
+.product-img {
+  position: absolute;
+  left: 0;
+  margin-top: 55px;
+  margin-left: 120px;
+  width: 222px;
+  height: auto;
+}
+
+.product-detail {
+  padding: 0 20px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.product-detail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.back-text {
+  display: inline-block;
+  font-size: 125px;
+  font-weight: 900;
+  margin-left: -7px;
+  margin-top: -12px;
+  opacity: 0.1;
+}
+
+.card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+}
+
+.product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-title b {
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #11e95b;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: -2px;
+  margin-left: 5px;
+}
+
+.product-caption {
+  display: block;
+  padding: 0 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-rating {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.product-rating i {
+  margin-top: 12px;
+}
+
+.product-prix h4 {
+  font-size: 11px;
+  padding: 0 21px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.product-price {
+  position: absolute;
+  background: #f7931a;
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+.product-price2 {
+  position: absolute;
+  background: #3c3c3d;
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 55px;
+  margin-left: -5px;
+}
+
+.product-price b {
+  margin-left: 5px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.Title {
+  margin-top: 4%;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 30px;
+}
+
+.subTitle {
+  font-family: Arial;
+  margin-top: 2%;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 25px;
+}
+
+.answer {
+  font-family: Arial;
+  margin-top: 1%;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 15px;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.discord {
+  display: block;
+  background-color: #7289da;
+  border-radius: 20px;
+  width: 400px;
+  height: 100px;
+}
+
+.discord h2,
+a {
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+.discord h2 {
+  font-size: 30px;
+}
+
+.discord a {
+  font-size: 19px;
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#discord {
+  padding: 8.5px;
+  float: left;
+}
+
+.github {
+  display: block;
+  background-color: #696969;
+  border-radius: 20px;
+  width: 400px;
+  height: 100px;
+}
+
+.github h2,
+a {
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+.github h2 {
+  font-size: 30px;
+}
+
+.github a {
+  font-size: 19px;
+  display: inline-block;
+  padding-top: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#github {
+  padding: 8.5px;
+  float: left;
+}
+
+.twitter {
+  display: block;
+  background-color: #1da1f2;
+  border-radius: 20px;
+  width: 400px;
+  height: 100px;
+}
+
+.twitter h2,
+a {
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+.twitter h2 {
+  font-size: 30px;
+}
+
+.twitter a {
+  font-size: 19px;
+  display: inline-block;
+  padding-top: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#twitter {
+  padding: 8.5px;
+  float: left;
+}
+
+.mail {
+  display: block;
+  background-color: #f2a60c;
+  border-radius: 20px;
+  width: 400px;
+  height: 100px;
+}
+
+.mail h2,
+a {
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+.mail h2 {
+  font-size: 30px;
+}
+
+.mail a {
+  font-size: 19px;
+  display: inline-block;
+  padding-top: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+#mail {
+  padding: 8.5px;
+  float: left;
+}
