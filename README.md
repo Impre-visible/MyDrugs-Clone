@@ -14,7 +14,7 @@ This website is a clone of the MyDrugs, the website is not perfect but work so :
 
 - 🌱 I’m currently learning **Flask**
 
-- 👨‍💻 All of my projects are available at [chevrier.cf](chevrier.cf)
+- 👨‍💻 All of my projects are available at [https://chevrier.cf](chevrier.cf)
 
 - 💬 Ask me about **basic python**
 
